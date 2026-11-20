@@ -78,6 +78,12 @@ nav ul li a:hover {
 
 
 /* Main background section */
+.results-section {
+    background-image: url("./aurora.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .hero {
     min-height: calc(100vh - 70px);
@@ -413,7 +419,6 @@ nav ul li a:hover {
 
     padding: 40px;
 
-    background-color: #f4f6f6;
 }
 
 /* Recommendation cards */
