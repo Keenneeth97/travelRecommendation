@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h2>Travel Explorer</h2>
+        </div>
+        <ul>
+            <li><a href="travel_recommendation.html">Inicio</a></li>
+            <li><a href="about_us.html">Sobre nosotros</a></li>
+            <li><a href="contact_us.html">Contáctanos</a></li>
+        </ul>
+        <div class="search-container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search beaches,temples or countries"
+            >
+            <button type="button" id="searchBtn">
+                Buscar
+            </button>
+            <button type="button" id="clearBtn">
+                Restablecer
+            </button>
+        </div>
+    </nav>
+    <!-- Main section -->
+    <main class="hero" id="hero">
+        <!-- Social media icons -->
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="X">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        
+        <!-- Introduction -->
+        <section class="hero-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <h2>YOUR NEXT ADVENTURE STARTS HERE</h2>
+            <p>
+                Discover amazing destinations, explore new cultures
+                and find inspiration for your next journey.
+                We help you find the perfect destination for
+                unforgettable experiences around the world.
+            </p>
+            <button class="book-button">Book Now</button>
+        </section>
+    </main>
+    <!-- Search results -->
+    <section id="results-section" class="results-section">
+        <h2>Search Results</h2>
+        <div id="results" class="results-grid"></div>
+    </section>
+    <script src="./travel_recommendation.js" defer></script>
+</body>
+</html>

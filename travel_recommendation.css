@@ -1,0 +1,502 @@
+
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #172D3B;
+    padding: 15px 30px;
+    color: white;
+}
+
+/* Logo */
+
+.logo h2 {
+    font-size: 22px;
+}
+
+/* Navigation links */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #36C9A5;
+}
+
+/* Search container */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #168B79;
+    color: white;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #36C9A5;
+}
+
+
+/* Main background section */
+
+.hero {
+    min-height: calc(100vh - 70px);
+    background-image: url("./aurora.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+/* Dark overlay to improve text visibility */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* Introduction content */
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+
+    max-width: 650px;
+    margin-left: 120px;
+    padding: 40px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Book button */
+
+.book-button {
+    padding: 14px 30px;
+    background-color: #168B79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.book-button:hover {
+    background-color: #36C9A5;
+}
+
+/* Social media sidebar */
+
+
+/* Social media icons */
+
+.social-icons {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    z-index: 2;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 22px;
+
+    border: 1px solid white;
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #168B79;
+    border-color: #168B79;
+    transform: scale(1.15);
+}
+
+
+
+/* ABOUT US PAGE */
+
+.about-page {
+    min-height: calc(100vh - 70px);
+
+    background-image: url("./aurora.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    padding: 60px 100px;
+
+    color: white;
+}
+
+/* Dark overlay */
+
+.about-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* About content */
+
+.about-content {
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 60px;
+    max-width: 1000px;
+}
+
+.about-content h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Team section */
+
+.team-section {
+    position: relative;
+    z-index: 1;
+}
+
+.team-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/* Team members */
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #172D3B;
+
+    padding: 30px;
+    border-radius: 10px;
+
+    width: 220px;
+
+    text-align: center;
+}
+
+.team-member i {
+    font-size: 40px;
+    color: #168B79;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #168B79;
+    font-weight: bold;
+}
+
+
+/* CONTACT US PAGE */
+
+.contact-page {
+    min-height: calc(100vh - 70px);
+
+    background-image: url("./aurora.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 50px;
+    color: white;
+}
+
+/* Dark overlay */
+
+.contact-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+/* Introduction */
+
+.contact-intro {
+    position: relative;
+    z-index: 1;
+
+    max-width: 450px;
+}
+
+.contact-intro h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.contact-intro p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Contact form container */
+
+.contact-form-container {
+    position: relative;
+    z-index: 1;
+
+    width: 450px;
+
+    background-color: rgba(255, 255, 255, 0.90);
+
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    color: #172D3B;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #168B79;
+}
+
+/* Submit button */
+
+.contact-form button {
+    padding: 14px;
+
+    background-color: #168B79;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #36C9A5;
+}
+
+
+/* SEARCH RESULTS */
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    padding: 40px;
+
+    background-color: #f4f6f6;
+}
+
+/* Recommendation cards */
+
+.result-card {
+    background-color: white;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Recommendation images */
+
+.result-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+/* Recommendation title */
+
+.result-card h3 {
+    padding: 15px;
+
+    color: #172D3B;
+    font-size: 20px;
+}
+
+/* Recommendation description */
+
+.result-card p {
+    padding: 0 15px 20px;
+
+    color: #555;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* Search Results Section */
+
+.results-section {
+    display: none;
+    min-height: calc(100vh - 70px);
+    background-color: #f4f6f6;
+    padding: 40px;
+}
+
+.results-section h2 {
+    color: #172D3B;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Results Grid */
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+}
